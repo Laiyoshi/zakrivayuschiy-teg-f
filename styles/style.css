@@ -15,7 +15,6 @@
 */
 
 .page {
-  padding-block-start: 100px;
   margin: 0 auto;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -31,9 +30,10 @@
 
 .header {
   margin-inline: auto;
+  margin-block: 100px;
   max-inline-size: 700px;
   font-family: var(--accent-font);
-  font-weight: normal;
+  font-weight: 400;
   background-color: var(--accent-color);
   border: 2px solid var(--main-color);
   display: flex;
@@ -86,4 +86,100 @@
   position: absolute;
   inset-inline-start: -15px;
   inset-block-start: 0px;
+}
+
+.card {
+  max-inline-size: 700px;
+  margin-inline: auto;
+  margin-block: 50px;
+  background-color: var(--accent-color);
+  border: 2px solid var(--main-color);
+}
+
+.card__header {
+  margin-inline-start: 10px;
+  margin-block: 3px;
+  line-height: 25px;
+}
+
+.card__header-title {
+  font-size: var(--text-size);
+  font-variation-settings: 'wght' var(--header-font-weight);
+}
+
+.card__logo {
+  position: relative;
+  max-inline-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card__logo-img {
+  border-block: 2px solid var(--main-color);
+  max-inline-size: 100%;
+}
+
+.card__label {
+  font-family: var(--accent-font);
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  -webkit-text-stroke: 1px var(--accent-color);
+  filter: brightness(50%);
+  font-size: 14px;
+}
+
+.card__text {
+  font-variation-settings: 'wght' var(--text-font-weight);
+  margin: 20px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.card__btn-icon {
+  background-color: var(--accent-color);
+  border: 0;
+  padding: 0;
+}
+
+.btns {
+  display: flex;
+  margin: 25px 25px;
+  gap: 0px 12px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.btn-icon__color {
+  fill: var(--main-color);
+}
+
+.card__btn {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  background-color: var(--accent-color);
+  border: 2px solid var(--main-color);
+  min-height: 38px;
+  min-width: 130px;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.floppy {
+  width: fit-content;
+  height: fit-content;
+}
+
+.floppy > use {
+  width: 10px;
+}
+
+.footer__btn {
+  width: 335px;
+  height: 55px;
 }
