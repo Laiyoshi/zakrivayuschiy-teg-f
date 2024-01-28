@@ -49,11 +49,13 @@
 }
 
 .header__main-title {
+  font-weight: var(--text-font-weight);
   font-size: var(--main-title-size);
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
 }
 
 .header__subtitle {
+  font-weight: var(--text-font-weight);
   text-transform: uppercase;
   font-size: var(--subtitle-size);
 }
@@ -63,6 +65,7 @@
   background-color: transparent;
   border: 0;
   font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -78,6 +81,10 @@
   justify-content: center;
   padding-inline-start: 20px;
   gap: 9px;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {

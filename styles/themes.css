@@ -5,7 +5,7 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-  --header-font-weight: 800;
+  --header-font-weight: 700;
   --text-font-weight: 400;
   --wdth: 110;
   --main-color: #000;
@@ -51,7 +51,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --header-font-weight: 800;
+    --header-font-weight: 700;
     --text-font-weight: 400;
     --main-color: #000;
     --accent-color: #fff;
