@@ -137,28 +137,36 @@
   margin-bottom: 50px;
 }
 
-.mix-darken {
-  mix-blend-mode: darken;
+.filter-saturate-blur {
+  filter: saturate(60%) blur(2px);
 }
 
-.mix-multiply {
-  mix-blend-mode: multiply;
+.filter-saturate {
+  filter: saturate(30%);
 }
 
-.mix-luminosity {
-  mix-blend-mode: luminosity;
+.filter-grayscale {
+  filter: grayscale(50%);
 }
 
-.mix-hard-light {
-  mix-blend-mode: hard-light;
+.filter-contrast {
+  filter: contrast(120%);
 }
 
-.mix-exclusion {
-  mix-blend-mode: exclusion;
+.filter-brightness {
+  filter: brightness(0.4);
 }
 
-.mix-difference {
-  mix-blend-mode: difference;
+.filter-blur {
+  filter: blur(2px);
+}
+
+.filter-sepia {
+  filter: sepia(60%);
+}
+
+.filter-mix {
+  filter: sepia(30%) brightness(0.4) contrast(120%);
 }
 
 .card {
