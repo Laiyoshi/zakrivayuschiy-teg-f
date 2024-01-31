@@ -178,9 +178,9 @@
 .card__header-title {
   font-size: var(--text-size);
   font-variation-settings: 'wght' var(--header-font-weight);
-  margin-inline: 10px;
-  margin-block: 3px;
-  line-height: 25px;
+  padding: 4px 10px;
+  line-height: calc(21 / 18);
+  border-block-end: 2px solid var(--main-color);
 }
 
 .card__logo {
@@ -190,12 +190,11 @@
 }
 
 .card__logo-img {
-  border-block: 2px solid var(--main-color);
+  display: block;
   object-fit: cover;
   object-position: center;
-  block-size: 700px;
-  min-inline-size: 696px;
-  max-inline-size: 100%;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card__label {
@@ -224,11 +223,12 @@
 }
 
 .card__text {
-  font-variation-settings: 'wght' var(--text-font-weight);
-  margin: 21px 25px 21px 25px;
   display: flex;
   flex-direction: column;
   gap: 27px;
+  padding: 27px 25px 0px 25px;
+  width: 100%;
+  border-block-start: 2px solid var(--main-color);
 }
 
 .btns {
@@ -390,39 +390,6 @@
 }
 
 @media (width <= 375px) {
-  .card__logo {
-    inline-size: 371px;
-    block-size: 371px;
-  }
-
-  .card__logo-img {
-    min-inline-size: 100%;
-    max-inline-size: 375px;
-    max-block-size: 375px;
-  }
-
-  .card__header {
-    margin-block: 4px 10px 6px;
-  }
-
-  .card__header-title {
-    margin: 0;
-    line-height: 23px;
-    padding: 4px 10px;
-  }
-
-  .card__text {
-    margin: 28px 25px 25px 25px;
-  }
-
-  .card__label {
-    right: 11px;
-  }
-
-  .btns {
-    margin: 25px 25px 24px;
-  }
-
   .floppy {
     min-width: 28px;
     min-height: 28px;
